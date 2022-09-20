@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+    --color1 : #12c2e9;
+    --color2 : #c471ed;
+    --color3 : #f64f59;
+    --colorgrey : rgb(178, 178, 178,0.4);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-index{
+    width: 100vw;
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); 
+}
+.body-index{
+    position: relative;
+    width: 25rem;
+    height: 40rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: white;
+}
+.inside-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.inside-index h1{
+    margin: 1rem 0;
+    font-family: 'Dangrek', cursive;
+    letter-spacing: 2px;
+    font-size: 36px;
+    color:  rgb(64, 64, 64,0.9);
+}
+.info-login{
+    width: 100%;
+    height: 10rem;
+    padding: 0 2rem;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inputstyle{
+    width: 100%;
+    height: max-content;
+}
+
+
+.inputstyle input{
+    width: 100%;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--colorgrey);
+    outline: none;
+    padding: 0 0.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: 0.5s;
+}
+.inputstyle input::placeholder{
+    color: var(--colorgrey);
+}
+.inputstyle input:focus{
+    border-bottom: 2px solid var(--color3) ;
+}
+.inputstyle h5{
+    font-weight: 100;
+    font-size: 12px;
+    color: rgb(64, 64, 64,0.8);
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+.user{
+    width: 100%;
+    height: auto;
+    background-color: #b2b2b2;
+}
+.btn-login{
+    width: 100%;
+    height: max-content;
+    padding:  0 2rem;
+    position: relative;
+}
+.btn-login button{
+    width: 100%;
+    position: relative;
+    height: 2.5rem;
+    margin: 2rem 0 0 0 ;
+    border-radius: 20px;
+    text-transform:uppercase ;
+    letter-spacing: 1px;
+    color: white;
+    background: -webkit-linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); 
+    border: none;
+    font-family: 'Dangrek', cursive;
+    font-size: 20px;
+}
+.btn-login h6{
+    width: max-content;
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    color: rgb(64, 64, 64,0.8);
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+.or{
+    margin: 3rem 0 0 0;
+    color: rgb(64, 64, 64,0.8);
+}
+.or h5{
+    color: rgb(64, 64, 64,0.8);
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+.social{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.social i{
+    width: 4rem;
+    height: 4rem;
+}
+.boder{
+    font-size: 24px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bi::before{
+    color: white;
+}
+.tw{
+    width: 3rem;
+    height: 3rem;
+    background-color: #00acee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.go{
+    width: 3rem;
+    height: 3rem;
+    background-color: #EA4335;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.gh{
+    width: 3rem;
+    height: 3rem;
+    background-color: #171515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.hover-p:hover{
+    cursor: pointer;
+}
+.or-signup{
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    gap: 10px;
+}
+.signup h5{
+    color: rgb(64, 64, 64,0.8);
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bolder;
+
+}
+.link-signup a{
+    text-transform: uppercase;
+    color:  rgb(64, 64, 64,0.9);   
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bolder;
+}
